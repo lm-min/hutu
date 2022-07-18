@@ -1,0 +1,248 @@
+@charset "utf-8";
+@import '_variables', '_mixin', '_utils', '_input';
+
+.theme {
+  position: relative;
+  width: 100%;
+  height: 23rem;
+  background: $gradient-purple;
+  .inner {
+    height: 100%;
+    color: $white;
+    background: url(/images/img-bg.png) no-repeat right;
+    background-size: 170px;
+  }
+  .text-area {
+    padding: 2rem 0;
+    h2 {
+      margin: 0 0 1rem 0;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+  }
+}
+.theme-introduction {
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+  border: 1px solid $gray;
+  p {
+    white-space: pre-line;
+    word-container: break-word;
+  }
+}
+.artist {
+  h2 {
+    margin: 4rem 0 2rem 0;
+  }
+  .item {
+    position: relative;
+    margin: 0 0 2.5rem 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .img-area {
+    position: relative;
+    height: 20rem;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.num1 {
+      background-image: url(/images/people/people3.jpg);
+      background-position: 0 -50px;
+    }
+    &.num2 {
+      background-image: url(/images/people/people6.jpg);
+      background-position: 0 -70px;
+    }
+    &.num3 {
+      background-image: url(/images/people/people8.jpeg);
+      background-position: center;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 50%;
+      background: $gradient-gray;
+    }
+  }
+  .btn-more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: $white;
+
+    font-size: 1.4rem;
+  }
+}
+.upcoming {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  margin: 2.5rem 0 0 0;
+  border: 1px solid $gray;
+  .img-area {
+    position: relative;
+    width: 100%;
+    &::before {
+      content: 'UPCOMING ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.about {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  margin: 2.5rem 0 0 0;
+  background-color: $purple;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+  }
+}
+// history
+.history {
+  .past-theme {
+    position: relative;
+    margin: 0 0 2rem 0;
+    &:last-child {
+      margin: 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: $transparen-gray;
+      z-index: 9;
+    }
+    span {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      color: #fff;
+      z-index: 99;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      max-height: 260px;
+    }
+  }
+}
+// upcoming
+.upcomingCont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  .text-area {
+    min-height: 5rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid $gray2;
+    p {
+      padding: 1rem;
+    }
+  }
+  .open-deta {
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
+
+// aboutCont
+.aboutCont,
+.introPage {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100vh - 55px);
+  .slick-slider {
+    position: relative;
+    flex: 1;
+    .slick-list {
+      height: 100%;
+      min-height: 38rem;
+    }
+    .slick-track {
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .slick-dots {
+      @include pos-absolute(horizontal);
+      bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      button {
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: 0 0.5rem;
+        font: 0/0 a;
+        border-radius: 100%;
+        background-color: $gray;
+        transition: all 0.3s ease;
+      }
+      .slick-active {
+        button {
+          width: 2rem;
+          border-radius: 2rem;
+          background-color: $purple;
+        }
+      }
+    }
+  }
+  .nav-mobile {
+    position: static;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    .btn-purple {
+      margin: 1rem;
+    }
+  }
+  .btn- {
+    a {
+      &:first-child {
+        background-color: $purple4;
+        margin: 2rem 2rem 1rem;
+      }
+      &:last-child {
+        margin: 0 2rem 2rem 2rem;
+      }
+    }
+  }
+}

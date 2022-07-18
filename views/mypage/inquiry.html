@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project pie-test</title>
+    <link rel="stylesheet" href="/css/xeicon.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/mypage.min.css" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header header-alteration">
+        <div class="inner">
+          <a href="/views/mypage/service.html" class="btn-back">
+            <i class="xi-angle-left"></i>
+          </a>
+          <p class="title">1:1 문의</p>
+        </div>
+      </header>
+      <div class="container container-alteration inquiry">
+        <ul class="tab-menu border-bt">
+          <li class="on"><a href="#none">문의하기</a></li>
+          <li><a href="#none">문의내역</a></li>
+        </ul>
+        <ul class="tab-content">
+          <li class="inquiryCont on">
+            <div class="inpBox">
+              <div class="inpTit">
+                <input type="text" class="form-control" placeholder="제목을 입력해주세요." />
+              </div>
+              <textarea class="form-control" placeholder="내용을 입력해주세요."></textarea>
+            </div>
+            <button class="btn-control btn-do">문의하기</button>
+          </li>
+          <li class="answer">
+            <ul class="item-list mg15">
+              <li class="item border-bt">
+                <a href="#none">
+                  <p class="tit">문의사항(4)</p>
+                  <div class="deta">
+                    <span class="date">2022.06.08</span>
+                    <small class="state">접수중</small>
+                  </div>
+                </a>
+              </li>
+              <li class="item border-bt">
+                <a href="/views/mypage//answerCont.html">
+                  <p class="tit">문의사항(3)</p>
+                  <div class="deta">
+                    <span class="date">2022.06.07</span>
+                    <small class="state">답변완료</small>
+                  </div>
+                </a>
+              </li>
+              <li class="item border-bt">
+                <a href="#">
+                  <p class="tit">문의사항(2)</p>
+                  <div class="deta">
+                    <span class="date">2022.06.02</span>
+                    <small class="state">답변완료</small>
+                  </div>
+                </a>
+              </li>
+              <li class="item border-bt">
+                <a href="#">
+                  <p class="tit">문의사항(1)</p>
+                  <div class="deta">
+                    <span class="date">2022.06.01</span>
+                    <small class="state">답변완료</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

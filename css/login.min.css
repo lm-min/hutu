@@ -1,0 +1,248 @@
+.w100p {
+  width: 100% !important;
+}
+
+.mg20 {
+  margin: 20px;
+}
+
+.mgr15 {
+  margin-right: 15px;
+}
+
+.mgb10 {
+  margin-bottom: 10px;
+}
+
+.mgb20 {
+  margin-bottom: 20px;
+}
+
+.pd10 {
+  padding: 10px;
+}
+
+.pd15 {
+  padding: 15px;
+}
+
+.pdt5 {
+  padding-top: 5px;
+}
+
+.pdt10 {
+  padding-top: 10px;
+}
+
+.pdr10 {
+  padding-right: 10px;
+}
+
+.pdr15 {
+  padding-right: 15px;
+}
+
+.pdb5 {
+  padding-bottom: 5px;
+}
+
+.pdb10 {
+  padding-bottom: 10px;
+}
+
+.pdl10 {
+  padding-left: 10px;
+}
+
+.pdl15 {
+  padding-left: 15px;
+}
+
+.b-1 {
+  border: 1px solid #c4c4c4;
+}
+
+.bt-1 {
+  border-top: 1px solid #f2f2f2;
+}
+
+.bb-1 {
+  border-bottom: 1px solid #eaeaea;
+}
+
+input[type=checkbox]:checked {
+  border: 1px solid #ba59b8;
+}
+
+input[type=checkbox] {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 0.8rem 0 0;
+  background: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.4rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+input[type=checkbox]::after {
+  content: "";
+  position: relative;
+  left: 40%;
+  top: 20%;
+  display: none;
+  width: 15%;
+  height: 40%;
+  transform: rotate(45deg);
+  border: 1px solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+input[type=checkbox]:checked {
+  background: #ba59b8;
+}
+
+input[type=checkbox]:checked::after {
+  display: block;
+}
+
+input[type=date] {
+  font-size: 1.5rem;
+}
+
+input[type=date]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+  color: #777;
+  font-weight: 400;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before {
+  display: none;
+}
+
+label {
+  display: block;
+  margin: 0 0 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  word-break: keep-all;
+}
+
+select {
+  -webkit-appearance: none;
+}
+select.on {
+  color: #444;
+}
+
+.login {
+  padding: 3rem 0 0 !important;
+}
+
+.input-control {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 1.6rem;
+  font-size: 1.4rem;
+}
+
+input[type=text] {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+input[type=password] {
+  border-top: 0;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.set-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.set-login > div {
+  margin: 1.5rem 0 0 0;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+}
+.check-box label {
+  display: inline-block;
+  margin: 0;
+}
+
+.account {
+  display: flex;
+}
+.account i {
+  color: #d9d9d9;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  font-style: normal;
+}
+
+.sub-login {
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid #eaeaea;
+}
+.sub-login p {
+  text-align: center;
+}
+.sub-login .btn-area {
+  margin: 2rem 0 0 0;
+}
+.sub-login .sns-btn {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+.sub-login .sns-btn + .sns-btn {
+  margin-left: 3.5rem;
+}
+.sub-login .sns-btn.kakao {
+  background-image: url(/images/icon/kakao-icon.svg);
+}
+.sub-login .sns-btn.naver {
+  background-image: url(/images/icon/naver-icon.svg);
+}
+.sub-login .sns-btn.google {
+  background-image: url(/images/icon/google-icon.svg);
+}
+
+.input-control {
+  min-width: 70px;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+  vertical-align: middle;
+}
+
+.btn-area {
+  position: relative;
+  margin: 1.5rem -4px 3rem;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  color: #fff;
+}

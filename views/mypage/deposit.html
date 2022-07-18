@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project pie-test</title>
+    <link rel="stylesheet" href="/css/xeicon.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/mypage.min.css" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/mypage.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header header-alteration">
+        <div class="inner">
+          <a href="/views/mypage/mypage.html" class="btn-back">
+            <i class="xi-angle-left"></i>
+          </a>
+          <p class="title">예치금</p>
+        </div>
+      </header>
+      <div class="container container-alteration deposit">
+        <ul class="tab-menu border-bt">
+          <li class="on"><a href="#none">거래내역</a></li>
+          <li><a href="#none">충전</a></li>
+          <li><a href="#none">출금</a></li>
+        </ul>
+        <ul class="tab-content">
+          <!-- 거래내역 -->
+          <li class="on">
+            <div class="myBalance border-bt">
+              <span>현재 예치금 잔액 :</span>
+              <span class="cash">999,999,999</span>
+              <span>원</span>
+            </div>
+            <ul class="tracking border-bt">
+              <li class="border-box"><button class="btn-tracking">당일</button></li>
+              <li class="border-box"><button class="btn-tracking">1주일</button></li>
+              <li class="border-box"><button class="btn-tracking">1개월</button></li>
+              <li class="border-box"><button class="btn-tracking">3개월</button></li>
+              <li class="border-box active btn-modal"><button class="btn-tracking">조건검색</button></li>
+            </ul>
+            <ul class="condition border-bt">
+              <li class="item item1">
+                <span class="cond-date1">2022-05-24</span>
+                <span>~</span>
+                <span class="cond-date2">2022-06-24</span>
+              </li>
+              <li class="item item2"><span>전체거래</span></li>
+              <li class="item item3"><span>최근거래순</span></li>
+            </ul>
+            <ul class="content-list">
+              <li class="item border-bt">
+                <div class="itemTop">
+                  <span class="left">2022-06-23 23:59:59</span>
+                  <span class="amount in right"><em>500,000</em> 원</span>
+                </div>
+                <div class="itemBuo">
+                  <span class="state left">충전</span>
+                  <span class="cibdCash right">잔액<em>999,999,999</em></span>
+                </div>
+              </li>
+              <li class="item border-bt">
+                <div class="itemTop">
+                  <span class="left">2022-06-23 23:59:59</span>
+                  <span class="amount in right"><em>500,000</em> 원</span>
+                </div>
+                <div class="itemBuo">
+                  <span class="state left">프리오더</span>
+                  <span class="cibdCash right">잔액<em>999,499,999</em></span>
+                </div>
+              </li>
+              <li class="item border-bt">
+                <div class="itemTop">
+                  <span class="left">2022-06-23 23:59:59</span>
+                  <span class="amount out right"><em>200,000</em> 원</span>
+                </div>
+                <div class="itemBuo">
+                  <span class="state left">출금</span>
+                  <span class="cibdCash right">잔액<em>999,799,999</em></span>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="myBalance border-bt">
+              <span>현재 예치금 잔액 :</span>
+              <span class="cash">999,999,999</span>
+              <span>원</span>
+            </div>
+            <div class="recharge border-bt">
+              <p>충전할 금액</p>
+              <input type="number" class="write border-box" placeholder="금액을 입력해주십시오 (1만원 이상)" />
+              <ul class="item-list">
+                <li class="border-box"><button class="btn-tracking">+1만원</button></li>
+                <li class="border-box"><button class="btn-tracking">+10만원</button></li>
+                <li class="border-box"><button class="btn-tracking">+100만원</button></li>
+                <li class="border-box"><button class="btn-tracking">+1000만원</button></li>
+              </ul>
+            </div>
+            <div class="means border-bt">
+              <p>충전수단</p>
+              <div class="text-area">충전수단</div>
+            </div>
+          </li>
+          <li>
+            <div class="myBalance border-bt">
+              <span>인출 가능 예치금 :</span>
+              <span class="cash">999,999,999</span>
+              <span>원</span>
+            </div>
+            <div class="withdraw border-bt">
+              <p>인출할 예치금</p>
+              <input type="number" class="write border-box" placeholder="금액을 입력해주십시오" />
+              <p class="message">출금가능금액을 초과했습니다.</p>
+            </div>
+            <div class="account border-bt">
+              <p>출금계좌 : <span>슈퍼은행 1234****9999</span></p>
+            </div>
+            <div class="precautions border-bt">
+              <p>출금 시 주의사항</p>
+              <div class="text-area">출금 시 주의사항</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- modal -->
+    <div id="modal" class="modal tracking-modal">
+      <div class="modal-box">
+        <div class="inner">
+          <h4 class="tit">검색조건</h4>
+          <div class="item item1">
+            <label>조회기간</label>
+            <div class="cont-box">
+              <input type="date" class="cont-date" id="date1" data-placeholder="YYYY-MM-DD" required />
+              <span>~</span>
+              <input type="date" class="cont-date" id="date2" data-placeholder="YYYY-MM-DD" required />
+            </div>
+          </div>
+          <div class="item item2">
+            <label>거래유형</label>
+            <select id="trackingSel" class="btn-control">
+              <option value="1">전체거래</option>
+              <option value="1">충전</option>
+              <option value="1">출금</option>
+              <option value="1">프리오더</option>
+            </select>
+          </div>
+          <div class="item item3">
+            <label>거래내역정렬</label>
+            <div class="cont-box btn-control active">
+              <button type="button" class="btn btn1 on">최근거래순</button>
+              <button type="button" class="btn btn2">과거거래순</button>
+            </div>
+          </div>
+          <button type="button" class="btn-purple btn-close">확인</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

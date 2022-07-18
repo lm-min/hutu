@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project pie-test</title>
+    <link rel="stylesheet" href="/css/xeicon.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/mypage.min.css" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header header-alteration">
+        <div class="inner">
+          <a href="/views/mypage/mypage.html" class="btn-back">
+            <i class="xi-angle-left"></i>
+          </a>
+          <p class="title">회원정보</p>
+        </div>
+      </header>
+      <div class="container container-alteration memberData">
+        <div class="user-neme">
+          <label>이름</label>
+          <input type="text" class="form-control" placeholder="서국화" disabled />
+        </div>
+        <div class="user-phone">
+          <label>휴대폰번호</label>
+          <div class="group">
+            <input type="text" class="form-control" placeholder="010-8842-0087" disabled />
+            <a href="/views/mypage/changePhone.html" class="btn-control">변경하기</a>
+          </div>
+        </div>
+        <div class="user-email">
+          <label>이메일</label>
+          <div class="group">
+            <input type="text" class="form-control" placeholder="email-address@naver.com" disabled />
+            <a href="/views/mypage/changeEmail.html" class="btn-control">변경하기</a>
+          </div>
+        </div>
+        <div class="user-account">
+          <label>출금계좌</label>
+          <div class="group">
+            <input type="text" class="form-control" placeholder="슈퍼은행 1234*****9999" disabled />
+            <a href="/views/mypage/account.html" class="btn-control">변경하기</a>
+          </div>
+        </div>
+        <div class="list">
+          <div class="user-pwd">
+            <a href="/views/mypage/changePwd.html" class="border-box">
+              <span>비밀번호 변경</span>
+              <i class="xi-angle-right-thin"></i>
+            </a>
+          </div>
+          <div class="logout">
+            <a href="#none" class="btn-modal border-box">
+              <span>로그아웃</span>
+              <i class="xi-angle-right-thin"></i>
+            </a>
+          </div>
+          <div class="delete-account">
+            <a href="/views/mypage/deleteAcc.html" class="border-box">
+              <span>탈퇴하기</span>
+              <i class="xi-angle-right-thin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+    <div id="modal" class="modal">
+      <div class="modal-box">
+        <div class="inner">
+          <p class="text">로그아웃 하시겠습니까?</p>
+          <button type="button" class="btn-purple btn-close">확인</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

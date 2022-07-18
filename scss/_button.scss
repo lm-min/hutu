@@ -1,0 +1,80 @@
+.btn-purple {
+  margin: 2rem 0 1rem 0;
+  background-color: $purple2;
+  border-radius: 0.25rem;
+}
+.btn-back {
+  // @include pos-absolute(vertical);
+  // left: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.btn-control {
+  width: 100%;
+  height: 4.2rem;
+  line-height: 2rem;
+  margin: 0 0 0 10px;
+  padding: 0.3rem 0.5rem;
+  color: $gray3;
+  font-size: 1.3rem;
+  background-color: $white;
+  border: 0.1rem solid $gray;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  cursor: pointer;
+  &:disabled {
+    color: $gray;
+    background-color: $gray3;
+    border: 0.1rem solid $gray3;
+    color: $gray2;
+    background-color: $white2;
+    border: 0.1rem solid $white2;
+    cursor: auto;
+  }
+}
+.btn-do {
+  margin: 2rem 0 0 0;
+  color: $white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: $purple2;
+  border: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  &.pad {
+    padding: 1.5rem 0;
+  }
+}
+.btn-more {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: $gray3;
+  cursor: pointer;
+  a {
+    position: relative;
+    padding: 1rem 0 0 0;
+    &::after {
+      content: '';
+      @include pos-absolute(horizontal);
+      bottom: -0.3rem;
+      display: inline;
+      width: 100%;
+      height: 0.1rem;
+      background-color: $gray;
+    }
+  }
+}
+.btn-bell {
+  position: relative;
+  display: block;
+  width: 7rem;
+  height: 100%;
+  border-left: 1px solid $gray;
+  cursor: pointer;
+  i {
+    @include pos-absolute;
+    width: 4rem;
+  }
+}

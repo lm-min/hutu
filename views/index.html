@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project pie-test</title>
+    <link rel="stylesheet" href="/css/xeicon.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="inner">
+          <div class="logo">
+            <a href="/views/index.html"><img src="/images/logo-p.svg" alt="logo" /></a>
+          </div>
+          <a href="/views/notify.html" class="btn-cont">
+            <i class="xi-bell-o"></i>
+          </a>
+        </div>
+      </header>
+      <div class="container inner">
+        <ul class="tab-menu">
+          <li class="on">
+            <a href="#none">NOW</a>
+          </li>
+          <li>
+            <a href="#none">HISTRY</a>
+          </li>
+        </ul>
+        <ul class="tab-content">
+          <li class="now on">
+            <section class="theme">
+              <a href="#none" class="inner">
+                <div class="text-area">
+                  <h2>이달의 테마</h2>
+                  <p>꽃과 조각</p>
+                </div>
+                <span class="text-time">[PRE-ORDER] <em>20일 15분 00초</em> 남음</span>
+              </a>
+            </section>
+            <section class="theme-introduction">
+              <p>테마소개글(Text) 이달의 테마 꽃과 조각</p>
+            </section>
+            <section class="artist">
+              <h2>ARTIST</h2>
+              <ul class="item-list">
+                <li class="item">
+                  <a href="/views/preorder/artistCont.html" class="img-area num1"></a>
+                  <span class="btn-more">
+                    더 알아보기
+                    <i class="xi-angle-right"></i>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="#none" class="img-area num2"></a>
+                  <span class="btn-more">
+                    더 알아보기
+                    <i class="xi-angle-right"></i>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="#none" class="img-area num3"></a>
+                  <span class="btn-more">
+                    더 알아보기
+                    <i class="xi-angle-right"></i>
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section class="upcoming">
+              <a href="/views/preorder/upcomingCont.html" class="img-area">
+                <img src="/images/art/sub-img-1.png" alt="" />
+              </a>
+              <div class="btn-bell btn-modal">
+                <i><img src="/images/icon/bell.png" alt="bell" /></i>
+              </div>
+            </section>
+            <section class="about">
+              <a href="/views/preorder/aboutCont.html">ABOUT</a>
+            </section>
+          </li>
+          <li class="history">
+            <div class="past-theme">
+              <img src="/images/art/sub-img-4.jpg" alt="" />
+              <span>마감</span>
+            </div>
+            <div class="past-theme">
+              <img src="/images/art/sub-img-2.png" alt="" />
+              <span>마감</span>
+            </div>
+            <div class="past-theme">
+              <img src="/images/art/sub-img-3.png" alt="" />
+              <span>마감</span>
+            </div>
+            <div class="past-theme">
+              <img src="/images/art/sub-img-1.png" alt="" />
+              <span>마감</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <nav class="mobile-menu">
+        <ul>
+          <li class="on">
+            <a href="/views/index.html">
+              <i class="xi-home-o"></i>
+              <p>PRE-ORDER</p>
+            </a>
+          </li>
+          <li>
+            <a href="/views/ordered/ordered.html">
+              <i class="xi-layout-aside-o"></i>
+              <p>ORDERED</p>
+            </a>
+          </li>
+          <li>
+            <a href="/views/login.html">
+              <i class="xi-user-o"></i>
+              <p>MY PAGE</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- modal -->
+    <div id="modal" class="modal">
+      <div class="modal-box">
+        <div class="inner">
+          <p class="text">프리오더 오픈 알림을 신청했습니다.</p>
+          <button type="button" class="btn-purple btn-close">확인</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project pie-test</title>
+    <link rel="stylesheet" href="/css/xeicon.min.css" />
+    <link rel="stylesheet" href="/webjars/slick/slick.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/webjars/slick/slick.min.js"></script>
+    <script src="/js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header header-alteration">
+        <div class="inner">
+          <div class="logo">
+            <a href="#none"><img src="/images/logo-p.svg" alt="logo" /></a>
+          </div>
+        </div>
+      </header>
+      <div class="container container-alteration w100p introPage">
+        <ul class="introPage-slider">
+          <li>
+            <img src="/images/intropage/Projectpie-img1.png" alt="" />
+          </li>
+          <li>
+            <img src="/images/intropage/Projectpie-img3.png" alt="" />
+          </li>
+          <li>
+            <img src="/images/intropage/Projectpie-img2.png" alt="" />
+          </li>
+        </ul>
+        <div class="btn-">
+          <a href="/views/signup.html" class="btn-do pd15"> 프로젝트 파이 가입하기 </a>
+          <a href="/views/index.html" class="btn-do pd15"> 프로젝트 파이 둘러보기 </a>
+        </div>
+      </div>
+    </div>
+    <!-- 슬라이드 -->
+    <script>
+      $('.introPage-slider').slick({
+        arrows: false,
+        dots: true,
+      });
+    </script>
+  </body>
+</html>

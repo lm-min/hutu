@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project pie-test</title>
+    <link rel="stylesheet" href="/css/xeicon.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/notify.min.css" />
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header header-alteration">
+        <div class="inner">
+          <a href="/views/index.html" class="btn-back">
+            <i class="xi-angle-left"></i>
+          </a>
+          <p class="title">알림함</p>
+        </div>
+      </header>
+      <div class="container container-alteration notify">
+        <ul class="tab-menu border-bt">
+          <li class="on"><a href="#">공지사항</a></li>
+          <li><a href="#">프리오더</a></li>
+        </ul>
+        <ul class="tab-content mg15">
+          <!-- 공지사항 -->
+          <li class="notice on">
+            <ul class="item-list">
+              <li class="item">
+                <a href="/views/mypage/noticeCont.html">
+                  <p class="tit">미술품 매각 투표 진행 안내</p>
+                  <span class="date">2022.06.21</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="contCheck">
+                  <p class="tit">공지사항(4)</p>
+                  <span class="date">2022.06.20</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 프리오더 -->
+          <li class="freeorder">
+            <ul class="item-list">
+              <li class="item">
+                <a href="#">
+                  <div class="tit">
+                    <p class="name">권순영</p>
+                    <p>슬픈모유</p>
+                  </div>
+                  <div class="deta">
+                    <span class="date">2022.06.21</span>
+                    <small class="state">참여확정</small>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="contCheck">
+                  <div class="tit">
+                    <p class="name">연인영</p>
+                    <p>디자인체어</p>
+                  </div>
+                  <div class="deta">
+                    <span class="date">2022.06.20</span>
+                    <small class="state">제작완료</small>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="contCheck">
+                  <div class="tit">
+                    <p class="name">연인영</p>
+                    <p>세상에서 가장 긴 이름을 가진 작품명은 어디까지 가는가요</p>
+                  </div>
+                  <div class="deta">
+                    <span class="date">2022.06.21</span>
+                    <small class="state">제작완료</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <s></s>
+        </ul>
+      </div>
+    </div>
+    <!-- 스트립트 : 알림없음 화면 'title' 클릭시 화면 보임-->
+    <script>
+      // 알림없을경우 클래스 부여하여 정보삭제(알림없음 text 표시)
+      // 알림없음이 공지사항 혹은 프리오더에 각각 부여인지 전체부여인지 확인필요
+      $('.title').on('click', function () {
+        let not = $(`<div class="not-text">
+                      <p>알림</p>
+                      <p>새로운 알림이 없습니다.</p>
+                      </div>`);
+
+        if ($('.tab-content > li').hasClass('on')) {
+          $('.tab-content > li').remove();
+          $('body').append(not);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+.reco-header {
+  padding: 3.5rem 0;
+  font-weight: 700;
+}
+.reco-header .inner {
+  display: flex;
+  align-items: center;
+}
+.reco-header .search {
+  font-size: 3rem;
+}
+.reco-header .content {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.reco-header .content a {
+  padding: 0 0.9rem;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+.reco-header .content a.on {
+  position: relative;
+}
+.reco-header .content a.on::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  bottom: -9px;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+}
+.reco-header .btn-menu {
+  width: 3rem;
+}
+.reco-header .btn-menu span {
+  display: block;
+  height: 2.5px;
+  background-color: #000;
+}
+.reco-header .btn-menu span:nth-child(1) {
+  width: 100%;
+}
+.reco-header .btn-menu span:nth-child(2) {
+  width: 80%;
+  margin: 0.5rem 0;
+}
+.reco-header .btn-menu span:nth-child(3) {
+  width: 60%;
+}
+
+.recommend,
+.latest {
+  padding: 1rem 1rem 8rem;
+}
+.recommend .item-list,
+.latest .item-list {
+  display: flex;
+  justify-content: center;
+  flex-container: container;
+}
+.recommend .item,
+.latest .item {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  flex-basis: calc(50% - 20px);
+  margin: 0 1rem 3rem;
+  font-weight: 700;
+}
+.recommend .img-area,
+.latest .img-area {
+  flex: 1;
+}
+.recommend .img-area > img,
+.latest .img-area > img {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.recommend .sub-img,
+.latest .sub-img {
+  display: flex;
+  margin: 0 -0.3rem;
+}
+.recommend .sub-img div,
+.latest .sub-img div {
+  width: 33.333%;
+  min-height: 4rem;
+  margin: 0.6rem 0.3rem 0;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.recommend .sub-img img,
+.latest .sub-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.recommend .text-area,
+.latest .text-area {
+  flex: 1;
+}
+.recommend .label,
+.latest .label {
+  padding: 1rem 0 0.3rem 0;
+  color: #777;
+}
+.recommend .tit,
+.latest .tit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  max-height: 2.8em;
+  font-size: 2rem;
+  word-break: keep-all;
+}
+
+@media screen and (max-width: 480px) {
+  .reco-header {
+    padding: 2.2rem 0;
+  }
+  .reco-header .search {
+    font-size: 2.6rem;
+  }
+  .reco-header .content a {
+    font-size: 2rem;
+  }
+
+  .recommend .label,
+  .latest .label {
+    font-size: 1.3rem;
+  }
+  .recommend .tit,
+  .latest .tit {
+    font-size: 1.6rem;
+  }
+}

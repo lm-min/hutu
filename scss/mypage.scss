@@ -1,0 +1,695 @@
+@charset "utf-8";
+@import '_variables', '_mixin';
+
+.myPage {
+  > div {
+    margin: 1.5rem 0;
+  }
+  h4 {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .item {
+    &.item2 {
+      display: flex;
+      align-items: center;
+      margin: 0 -0.3rem;
+      li {
+        flex: 1;
+        display: block;
+        width: 33.333%;
+        margin: 0 0.3rem !important;
+        text-align: center;
+      }
+      a {
+        padding: 1.5rem 0;
+        overflow: hidden;
+      }
+      span {
+        padding: 0;
+        font-size: 1.3rem;
+        white-space: nowrap;
+      }
+      p {
+        margin: 1rem 0 0 0;
+        font-size: 2rem;
+      }
+    }
+    &.item3 {
+      li {
+        display: block;
+      }
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+      }
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 1rem 0;
+      span,
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
+    .cash {
+      flex: 1;
+      text-align: right;
+    }
+    .btn-deposit {
+      padding: 0.3rem 1rem;
+      background-color: $gray2;
+    }
+  }
+}
+.memberData {
+  > div {
+    margin: 1.5rem 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  label {
+    margin: 0 0 0.5rem 0;
+  }
+  input {
+    flex: 3;
+    &::placeholder {
+      color: $black;
+    }
+  }
+  input:disabled {
+    background-color: $white3;
+  }
+  .btn-control {
+    flex: 1;
+    line-height: 3.2rem;
+    text-align: center;
+  }
+  .border-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    span {
+      padding: 0.5rem 1rem;
+    }
+  }
+  .list {
+    > div {
+      margin: 1rem 0 0 0;
+    }
+  }
+}
+.bankAccount,
+.changePwd,
+.changeEmail {
+  > div {
+    margin: 2rem 0;
+  }
+  label {
+    margin: 0 0 0.5rem 0;
+  }
+  .sel-box {
+    position: relative;
+  }
+}
+.myArt {
+  .item {
+    padding: 1rem 2rem;
+    /* 이미지
+    .artImg{
+      position: relative;
+      &::before{
+        content: "";
+        @include pos-absolute(vertical);
+        left: 0;
+        width: 6rem;
+        height: 6.3rem;
+        background-image: url(/images/art/art-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      > div{
+        padding: 0 0 0 7rem;
+      }
+    }
+    */
+  }
+  .cont {
+    display: flex;
+    align-items: center;
+    margin: 0 -1rem;
+    &.contTop {
+      font-size: 1.7rem;
+    }
+    &.conBot {
+      font-size: 1.3rem;
+    }
+    span {
+      position: relative;
+      padding: 0 1rem;
+      &::before {
+        content: '';
+        @include pos-absolute(vertical);
+        right: 0;
+        width: 0.1rem;
+        height: 1rem;
+        background-color: $black2;
+      }
+      &:last-child::before {
+        display: none;
+      }
+    }
+  }
+}
+.myArtCont {
+  > div {
+    padding: 3rem 0;
+    &:first-child {
+      padding: 0 0 3rem;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h4 {
+    flex: 1;
+    font-weight: 500;
+  }
+
+  .photo {
+    img {
+      width: 100%;
+      height: 40rem;
+      object-fit: cover;
+    }
+  }
+  .info {
+    .tit {
+      margin: 0 0 2rem 0;
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    .plan {
+      .item {
+        display: flex;
+        padding: 0.2rem 0;
+      }
+      p {
+        flex: 2;
+      }
+    }
+  }
+  .interview {
+    .text-area {
+      padding: 3rem 0 0 0;
+    }
+  }
+
+  // 스와이퍼 슬라이드 테스트 비교
+  .mySwiper {
+    .swiper-slide {
+      max-width: 300px;
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+.deleteAcc {
+  .border-box {
+    padding: 2rem 1.5rem;
+  }
+  .item {
+    margin: 0 0 2rem 0;
+    &:last-child {
+      margin: 0;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    ul {
+      margin: 1rem 0;
+      padding: 0 0 0 1.5rem;
+    }
+    li {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.4rem;
+      list-style: disc;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    span {
+      padding: 0 0 0 0.5rem;
+      color: red;
+      font-size: 1.3rem;
+    }
+  }
+}
+.deposit {
+  .tab-content {
+    .border-bt {
+      margin: 0 -1.5rem;
+      padding: 1rem 2rem;
+    }
+  }
+  .tracking {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem 1rem !important;
+  }
+  .border-box {
+    flex: 1;
+    min-width: 6rem;
+    margin: 0 0.5rem;
+    padding: 0;
+    text-align: center;
+    border-radius: 0.4rem;
+    &.active {
+      border-color: $purple2;
+      background-color: $purple2;
+      .btn-tracking {
+        color: $white;
+      }
+    }
+  }
+  .btn-tracking {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  .condition {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem !important;
+    .item {
+      position: relative;
+      font-size: 1.3rem;
+      padding: 0 0.8rem;
+      &::before {
+        content: '';
+        @include pos-absolute(vertical);
+        right: 0;
+        height: 1rem;
+        width: 0.1rem;
+        background-color: $black2;
+      }
+      &:last-child::before {
+        display: none;
+      }
+    }
+  }
+  .content-list {
+    li {
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .left {
+      font-size: 1.3rem;
+    }
+    .right {
+      font-size: 1.4rem;
+    }
+    .itemTop {
+      padding: 0 0 0.5rem 0;
+    }
+    .amount {
+      color: $gray4;
+      em {
+        font-weight: 600;
+      }
+      &.in em {
+        color: $blue;
+      }
+      &.out em {
+        color: $red;
+      }
+    }
+    .state {
+      width: 7rem;
+      padding: 0.2rem 1rem;
+      color: $gray4;
+      text-align: center;
+      border-color: $gray;
+      border-radius: 0;
+    }
+    .cibdCash {
+      color: $gray4;
+      em {
+        padding: 0 0 0 0.5rem;
+      }
+    }
+  }
+  .recharge {
+    padding: 0.8rem 2rem 1.5rem !important;
+    .write {
+      width: 100%;
+      margin: 0.8rem 0 0.3rem 0;
+      padding: 1rem !important;
+    }
+    .item-list {
+      display: flex;
+      margin: 0 -0.2rem;
+      li {
+        flex: 1;
+        margin: 0 0.2rem;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    .btn-tracking {
+      width: 100%;
+      padding: 1rem 0.5rem;
+    }
+  }
+  .means {
+    min-height: 8rem;
+    .text-area {
+      text-align: center;
+    }
+  }
+  .withdraw {
+    .write {
+      width: 100%;
+      margin: 0.8rem 0 0.3rem 0;
+      padding: 1rem !important;
+    }
+  }
+  .precautions {
+    min-height: 8rem;
+    .text-area {
+      text-align: center;
+    }
+  }
+}
+.tracking-modal {
+  .modal-box {
+    .btn-close {
+      margin: 2rem 0 0 0;
+    }
+  }
+  .tit {
+    margin: 0 0 01rem 0;
+    text-align: left;
+    font-weight: 500;
+  }
+  .item {
+    margin: 0 0 01rem 0;
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+  .item3 {
+    .btn-control {
+      position: relative;
+      &::before {
+        content: '';
+        @include pos-absolute;
+        width: 0.1rem;
+        height: 4.2rem;
+        background-color: $gray3;
+        z-index: 2;
+      }
+    }
+    .btn {
+      flex: 1;
+      height: 4.2rem;
+    }
+    .active {
+      &::before {
+        background-color: $purple2;
+      }
+      .on {
+        color: $white;
+        background-color: $purple2;
+      }
+    }
+  }
+  label {
+    margin: 0 0 0.5rem 0;
+    font-weight: 400;
+  }
+  .cont-box {
+    display: flex;
+    align-items: center;
+    span {
+      padding: 0 1rem;
+    }
+  }
+  .cont-date {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    border: 0;
+    background-color: $white;
+  }
+  .btn-control {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: $black2;
+    border-color: $gray3;
+
+    flex: 1;
+    position: relative;
+    height: 4.2rem;
+  }
+  select {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align-last: center;
+  }
+}
+.service,
+.settings,
+.usepolicy {
+  li {
+    margin: 0 -1.5rem;
+
+    a {
+      padding: 1.5rem 2rem;
+      font-weight: 500;
+    }
+  }
+  // i {
+  //   float: right;
+  // }
+}
+.notice,
+.event,
+.faq {
+  .item {
+    padding: 1.2rem 2rem;
+  }
+  span {
+    font-size: 1.4rem;
+    // font-weight: 300;
+  }
+}
+.noticeCont,
+.eventCont {
+  .tit {
+    padding: 1rem 1.5rem;
+    p {
+      padding: 0 0 0.5rem 0;
+    }
+  }
+  .text-area {
+    padding: 1rem 0;
+    p {
+      white-space: pre-container;
+    }
+  }
+}
+.faq {
+  .item {
+    padding: 1.5rem 2rem;
+  }
+}
+.guide {
+  .tab-content {
+    height: calc(100vh - 102px);
+  }
+  .on {
+    height: 100%;
+  }
+  .slick-slider {
+    height: 100%;
+  }
+  .guide-slider {
+    .slick-list {
+      height: 100%;
+      min-height: 38rem;
+    }
+    .slick-track {
+      height: 100%;
+    }
+  }
+}
+.inquiry {
+  .inquiryCont.on {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100vh - 102px);
+  }
+  .inpBox {
+    display: flex !important;
+    flex-direction: column;
+    flex: 1;
+  }
+  .inpTit {
+    margin: 2rem 0;
+  }
+  textarea {
+    font-family: 'Spoqa Han Sans Neo';
+  }
+  .btn-do {
+    margin: 2rem 0;
+  }
+  .item-list {
+    .item {
+      padding: 1rem 2rem;
+    }
+  }
+  .answer {
+    .tit {
+      @include ellipsis(one);
+    }
+    .deta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.2rem 0 0 0;
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+.answerCont {
+  .border-bt {
+    padding: 1rem 2rem;
+  }
+  .cont {
+    p {
+      padding: 1rem 0;
+    }
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 0;
+  }
+  .body {
+    border: 0;
+  }
+}
+.notifications {
+  .border-bt {
+    padding: 1.5rem 2rem;
+    font-weight: 500;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.agreement,
+.privacy {
+  .title {
+    margin: 3.2rem 0 1.6rem 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .policy {
+    padding: 0 0 3rem 0;
+  }
+  h2 {
+    margin: 3rem 0 1.6rem;
+    font-size: 2rem;
+  }
+  strong {
+    margin: 1.6rem 0 0.8rem 0;
+    font-size: 1.3rem;
+  }
+  p {
+    margin: 0.8rem 0 0 0;
+    font-size: 1.2rem;
+  }
+}
+
+.aboutCont {
+  .about-info {
+    margin: 2rem 0;
+  }
+  li + li {
+    margin: 0.3rem 0;
+  }
+  em {
+    padding: 0 0.5rem;
+  }
+}
+// 기타등등
+i {
+  font-size: 1.8rem;
+  height: 100%;
+  display: block;
+}
+input[type='number'] {
+  text-align: left !important;
+}
+.btn-toggle {
+  position: relative;
+  #toggle1,
+  #toggle2 {
+    position: relative;
+    width: 4rem;
+    height: 1rem;
+    margin: 0;
+    background: $gray;
+    border: 0;
+    border-radius: 2rem;
+    &::after {
+      @include pos-absolute(vertical);
+      left: 0;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      border: 0;
+      border-radius: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 1rem $transparen-gray;
+    }
+    &:checked {
+      background-color: $purple3;
+      &::after {
+        left: auto;
+        right: 0;
+        background-color: $purple2;
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+.w100p {
+  width: 100% !important;
+}
+
+.mg20 {
+  margin: 20px;
+}
+
+.mgr15 {
+  margin-right: 15px;
+}
+
+.mgb10 {
+  margin-bottom: 10px;
+}
+
+.mgb20 {
+  margin-bottom: 20px;
+}
+
+.pd10 {
+  padding: 10px;
+}
+
+.pd15 {
+  padding: 15px;
+}
+
+.pdt5 {
+  padding-top: 5px;
+}
+
+.pdt10 {
+  padding-top: 10px;
+}
+
+.pdr10 {
+  padding-right: 10px;
+}
+
+.pdr15 {
+  padding-right: 15px;
+}
+
+.pdb5 {
+  padding-bottom: 5px;
+}
+
+.pdb10 {
+  padding-bottom: 10px;
+}
+
+.pdl10 {
+  padding-left: 10px;
+}
+
+.pdl15 {
+  padding-left: 15px;
+}
+
+.b-1 {
+  border: 1px solid #c4c4c4;
+}
+
+.bt-1 {
+  border-top: 1px solid #f2f2f2;
+}
+
+.bb-1 {
+  border-bottom: 1px solid #eaeaea;
+}
+
+input[type=checkbox]:checked {
+  border: 1px solid #ba59b8;
+}
+
+input[type=checkbox] {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 0.8rem 0 0;
+  background: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.4rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+input[type=checkbox]::after {
+  content: "";
+  position: relative;
+  left: 40%;
+  top: 20%;
+  display: none;
+  width: 15%;
+  height: 40%;
+  transform: rotate(45deg);
+  border: 1px solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+input[type=checkbox]:checked {
+  background: #ba59b8;
+}
+
+input[type=checkbox]:checked::after {
+  display: block;
+}
+
+input[type=date] {
+  font-size: 1.5rem;
+}
+
+input[type=date]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+  color: #777;
+  font-weight: 400;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before {
+  display: none;
+}
+
+label {
+  display: block;
+  margin: 0 0 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  word-break: keep-all;
+}
+
+select {
+  -webkit-appearance: none;
+}
+select.on {
+  color: #444;
+}
+
+.signup {
+  padding: 3rem 0 0 !important;
+}
+
+label {
+  display: block;
+  margin: 0 0 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  word-break: keep-all;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+input::-moz-placeholder {
+  color: #c4c4c4;
+  font-size: 1.3rem;
+}
+
+input:-ms-input-placeholder {
+  color: #c4c4c4;
+  font-size: 1.3rem;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+  font-size: 1.3rem;
+}
+
+.btn-control {
+  flex: 1;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 2rem;
+  margin: 0 0 0 10px;
+  padding: 0.3rem 0.5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #ba59b8;
+  border: 0.1rem solid #ba59b8;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.btn-control:disabled {
+  color: #c4c4c4;
+  background-color: #777;
+  border: 0.1rem solid #777;
+  cursor: auto;
+}
+
+.content {
+  margin: 0 0 3rem 0;
+}
+
+.input-area {
+  flex: 1.5;
+}
+
+.input-container {
+  position: relative;
+}
+.input-container i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: 1.5rem;
+  font-size: 2rem;
+}
+
+.email-box .email {
+  flex: 1;
+}
+.email-box .domain {
+  position: relative;
+  flex: 1;
+}
+.email-box select.on {
+  color: #444;
+  z-index: 1;
+}
+.email-box #select-direct {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 0.2rem;
+  width: 80%;
+  height: 90%;
+  padding: 0 0 0 1.5rem;
+  font-size: 1.3rem;
+  border: 0;
+}
+.email-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: 1rem;
+}
+.email-box .separator {
+  flex: 0 0 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #c4c4c4;
+}
+
+.phone-box .input-area {
+  position: relative;
+}
+.phone-box .timer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: 1.5rem;
+  font-size: 1.3rem;
+  color: #ba59b8;
+}
+.phone-box .sms {
+  display: none;
+}
+
+.agree-box .group {
+  display: block;
+}
+.agree-box .form-control {
+  padding: 2rem 1.5rem;
+}
+.agree-box .form-control label {
+  line-height: 4rem;
+  margin: 0;
+  font-weight: normal;
+}
+.agree-box .all-chk {
+  margin: 0 0 1.5rem 0;
+  padding: 0 0 1.5rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.agree-box .all-chk,
+.agree-box .choice li {
+  display: flex;
+  align-items: center;
+}
+.agree-box .all-chk label,
+.agree-box .choice li label {
+  font-size: 1.4rem;
+}
+.agree-box span {
+  padding: 0 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+.agree-box span.essential {
+  color: #ba59b8;
+}
+
+.btn-signup {
+  margin: 0 0 3rem 0;
+}
+
+.login-page {
+  padding: 0 0 2rem 0;
+  text-align: center;
+}
+.login-page a {
+  display: inline;
+  padding: 0 0 0 0.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
